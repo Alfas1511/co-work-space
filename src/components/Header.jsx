@@ -27,20 +27,36 @@ const Header = () => {
                         </div>
                     </div>
 
-                    {/* CTA Button */}
-                    <button
-                        onClick={() =>
-                            document.getElementById("contact")
-                                .scrollIntoView({ behavior: "smooth" })
-                        }
-                        className="px-6 py-2.5 rounded-full 
-                        bg-gradient-to-r from-blue-600 to-indigo-600 
-                        text-white text-sm font-semibold 
-                        shadow-md hover:shadow-xl 
-                        hover:scale-105 transition-all duration-300"
-                    >
-                        Contact Us
-                    </button>
+                    <nav className="flex items-center space-x-4">
+                        {/* Accounts Solutions Link */}
+                        <a
+                            href="#"
+                            className="relative px-5 py-2.5 rounded-full
+                                border border-blue-600/40
+                                text-blue-700 font-semibold text-sm
+                                backdrop-blur-md bg-white/70
+                                hover:bg-blue-600 hover:text-white
+                                hover:border-blue-600
+                                transition-all duration-300
+                                shadow-sm hover:shadow-lg">
+                            Accounts Solutions
+                        </a>
+
+                        {/* Contact Button */}
+                        <button
+                            onClick={() =>
+                                document.getElementById("contact")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }
+                            className="px-6 py-2.5 rounded-full 
+                                bg-gradient-to-r from-blue-600 to-indigo-600 
+                                text-white text-sm font-semibold 
+                                shadow-md hover:shadow-xl 
+                                hover:scale-105 transition-all duration-300">
+                            Contact Us
+                        </button>
+                    </nav>
+
 
                 </div>
             </header>
