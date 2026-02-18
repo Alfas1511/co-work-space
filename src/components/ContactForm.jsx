@@ -9,10 +9,10 @@ export default function ContactForm() {
 
         emailjs
             .sendForm(
-                "service_wq8k4hr",   // EmailJS Service ID
-                "template_ajtuygp",  // EmailJS Template ID
+                "service_wq8k4hr",
+                "template_ajtuygp",
                 form.current,
-                "cB3olJSMVDUydxXmb"    // EmailJS Public Key
+                "cB3olJSMVDUydxXmb"
             )
             .then(
                 () => {
@@ -27,46 +27,82 @@ export default function ContactForm() {
     };
 
     return (
-        <section id="contact" className="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-6">
-            <div className="max-w-3xl mx-auto">
-                <h2 className="text-4xl font-extrabold text-center text-blue-800 mb-10">
-                    Get in Touch
-                </h2>
+        <section
+            id="contact"
+            className="relative py-28 px-6 bg-slate-100 overflow-hidden"
+        >
+            {/* Subtle background glow */}
+            <div className="absolute -top-20 -left-20 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
+            <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-indigo-200 rounded-full blur-3xl opacity-30"></div>
 
+            <div className="relative max-w-3xl mx-auto">
+
+                {/* Heading */}
+                <div className="text-center mb-14">
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900">
+                        Get in Touch
+                    </h2>
+                    <p className="text-slate-500 mt-3 text-lg">
+                        Let’s discuss your workspace needs
+                    </p>
+                </div>
+
+                {/* Form Card */}
                 <form
                     ref={form}
                     onSubmit={sendEmail}
-                    className="space-y-6 bg-white p-10 rounded-2xl shadow-2xl"
+                    className="bg-white/80 backdrop-blur-xl 
+                    border border-white/40
+                    p-10 md:p-12 
+                    rounded-3xl 
+                    shadow-xl 
+                    space-y-8"
                 >
                     {[
                         { id: "name", label: "Name", type: "text" },
                         { id: "email", label: "Email", type: "email" },
-                        { id: "address", label: "Address", type: "text" },
                         { id: "phone", label: "Phone Number", type: "tel" },
+                        { id: "address", label: "Address", type: "text" },
                     ].map((field, i) => (
                         <div className="relative" key={i}>
                             <input
                                 type={field.type}
                                 id={field.id}
-                                name={field.id} // ✅ IMPORTANT for EmailJS
+                                name={field.id}
                                 placeholder=" "
-                                className="peer w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                                className="peer w-full bg-transparent 
+                                border border-slate-300 
+                                p-4 rounded-xl 
+                                focus:outline-none 
+                                focus:ring-2 focus:ring-blue-500 
+                                focus:border-blue-500 
+                                transition"
                                 required
                             />
                             <label
                                 htmlFor={field.id}
-                                className="absolute left-4 top-3 text-gray-500 text-sm transition-all 
-                  peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 
-                  peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-blue-600 peer-focus:text-sm"
+                                className="absolute left-4 top-4 text-slate-500 text-sm transition-all
+                                peer-placeholder-shown:top-5 
+                                peer-placeholder-shown:text-slate-400 
+                                peer-placeholder-shown:text-base 
+                                peer-focus:top-2 
+                                peer-focus:text-blue-600 
+                                peer-focus:text-sm"
                             >
                                 {field.label}
                             </label>
                         </div>
                     ))}
 
+                    {/* Premium Button */}
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 text-white py-4 rounded-xl font-semibold text-lg shadow-md hover:bg-blue-700 active:scale-95 transition transform"
+                        className="w-full py-4 rounded-full 
+                        bg-gradient-to-r from-blue-600 to-indigo-600 
+                        text-white text-lg font-semibold 
+                        shadow-md hover:shadow-xl 
+                        hover:scale-[1.02] 
+                        transition-all duration-300"
                     >
                         Submit
                     </button>
