@@ -14,7 +14,8 @@ const Footer = () => {
                             Our Address
                         </h3>
                         <p className="text-sm leading-relaxed text-slate-400">
-                            1st Floor Shopping Complex <br />
+                            1st Floor <br />
+                            Oliapuram Complex <br />
                             P.O Junction Kothamangalam <br />
                             Ernakulam, 686691
                         </p>

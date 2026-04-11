@@ -1,22 +1,30 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import WorkSpaceLayout from "./components/WorkSpaceLayout/WorkSpaceLayout";
+import AccountsLayout from "./components/AccountSolutionsLayout/AccountsLayout";
+
+import Home from "./pages/WorkSpace/Home";
+import AccountsSolutions from "./pages/AccountSolutions/AccountSolutions";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ContactForm from "./components/ContactForm";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Home from "./pages/Home";
 
 export default function App() {
-
   return (
-    <div className="font-sans text-gray-800">
+    <Router>
+      <Routes>
 
-      <Header />
+        {/* Workspace Pages */}
+        <Route element={<WorkSpaceLayout />}>
+          <Route path="/" element={<Home />} />
+        </Route>
 
-      <Home />
+        {/* Accounts Pages */}
+        <Route element={<AccountsLayout />}>
+          <Route path="/accounts-solutions" element={<AccountsSolutions />} />
+        </Route>
 
-      <Footer />
-
-    </div>
+      </Routes>
+    </Router>
   );
 }

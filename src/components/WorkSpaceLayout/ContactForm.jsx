@@ -29,7 +29,7 @@ export default function ContactForm() {
     return (
         <section
             id="contact"
-            className="relative py-28 px-6 bg-slate-100 overflow-hidden"
+            className="relative py-20 px-6 bg-slate-100 overflow-hidden"
         >
             {/* Subtle background glow */}
             <div className="absolute -top-20 -left-20 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
