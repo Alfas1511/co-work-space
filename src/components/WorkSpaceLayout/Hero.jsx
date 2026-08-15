@@ -17,7 +17,7 @@ export default function Hero() {
             <section className="relative w-full overflow-hidden">
                 <Slider {...settings}>
                     {[
-                        { img: "/images/work_space_image_1.jpg", title: "Work Smarter, Together", desc: "Premium coworking spaces designed for productivity, collaboration, and growth." },
+                        { img: "/images/work_space_image_1.jpg", title: "Work Smarter, Work Together", desc: "Premium coworking spaces designed for productivity, collaboration, and growth." },
                         { img: "/images/cws-2.webp", title: "Flexible Plans", desc: "Choose from daily, weekly, or monthly rentals that fit your needs." },
                         { img: "/images/work3.jpg", title: "Your Office, Your Way", desc: "Modern spaces in prime locations to help your business thrive." }
                     ].map((slide, idx) => (

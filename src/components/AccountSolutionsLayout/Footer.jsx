@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaEnvelope  } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -67,19 +67,19 @@ const Footer = () => {
                             <span className="w-8 h-8 flex items-center justify-center bg-slate-800 rounded-full">
                                 <FaPhone className="text-white text-xs" />
                             </span>
-                            +919847420649
+                            +919744668439
                         </p>
                         <p className="flex items-center gap-3 text-slate-400 text-sm py-2">
                             <span className="w-8 h-8 flex items-center justify-center bg-slate-800 rounded-full">
                                 <FaPhone className="text-white text-xs" />
                             </span>
-                            +918921579300
+                            +919847420649
                         </p>
                         <p className="flex items-center gap-3 text-slate-400 text-sm">
                             <span className="w-8 h-8 flex items-center justify-center bg-slate-800 rounded-full">
-                                <FaEnvelope  className="text-white text-xs" />
+                                <FaEnvelope className="text-white text-xs" />
                             </span>
-                            workspaceklm2026@gmail.com
+                            taxconsultantklm2026@gmail.com
                         </p>
                     </div>
 

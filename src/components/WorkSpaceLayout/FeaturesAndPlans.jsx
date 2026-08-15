@@ -21,7 +21,7 @@ export default function FeaturesAndPlans() {
                             { icon: <FaUsers />, text: "Meeting & Conference Rooms" },
                             { icon: <FaLock />, text: "24/7 CCTV Security" },
                             { icon: <FaUtensils />, text: "Restaurant & Cafe Facility" },
-                            { icon: "🍽️", text: "Dining Area" },
+                            // { icon: "🍽️", text: "Dining Area" },
                             { icon: "🚹🚺", text: "Separate Spaces for Gents & Ladies" },
                             { icon: <FaMapMarkerAlt />, text: "Prime City Location" },
                             { icon: "💰", text: "Budget Friendly Memberships" },
@@ -58,7 +58,7 @@ export default function FeaturesAndPlans() {
                     <div className="grid gap-8">
                         {[
                             { title: "Daily Pass", desc: "Perfect for freelancers & travelers", price: "₹100 / Day" },
-                            { title: "Weekly Plan", desc: "Best for short-term projects", price: "₹500 / Week" },
+                            // { title: "Weekly Plan", desc: "Best for short-term projects", price: "₹500 / Week" },
                             { title: "Monthly Membership", desc: "Ideal for startups & teams", price: "₹2500 / Month", popular: true }
                         ].map((plan, i) => (
                             <div
