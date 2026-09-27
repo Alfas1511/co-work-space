@@ -12,7 +12,7 @@ export default function WorkspaceLayout() {
                 showAccountsLink={true}
                 showWorkspaceLink={false}
             />
-            <main className="pt-24 flex-grow">
+            <main className="flex-grow">
                 <Outlet />
             </main>
             <Footer />

@@ -2,25 +2,26 @@ import React from "react";
 
 export default function AccountsSolutions() {
     return (
-        <section className="pt-32 pb-28 bg-slate-50">
-            <div className="max-w-6xl mx-auto px-6">
+        <section className="relative pt-32 pb-28 overflow-hidden section-gradient">
+            <div className="absolute top-40 right-0 w-72 h-72 rounded-full bg-[var(--forest)]/10 blur-3xl pointer-events-none" />
+            <div className="absolute bottom-20 left-0 w-80 h-80 rounded-full bg-[var(--wood)]/10 blur-3xl pointer-events-none" />
 
-                {/* Header */}
+            <div className="relative max-w-6xl mx-auto px-6">
+
                 <div className="text-center mb-20">
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900">
+                    <h1 className="font-display text-4xl md:text-5xl font-semibold text-[var(--ink)]">
                         Accounts Solutions
                     </h1>
-                    <p className="text-lg text-slate-600 mt-4">
+                    <p className="text-lg text-[var(--ink-soft)] mt-4">
                         Your Accounting Partner
                     </p>
                 </div>
 
-                {/* Intro */}
                 <div className="max-w-4xl mx-auto text-center mb-20">
-                    <h2 className="text-2xl md:text-3xl font-semibold text-slate-800 mb-6">
+                    <h2 className="font-display text-2xl md:text-3xl font-semibold text-[var(--ink)] mb-6">
                         Professional Accounting & Compliance Services
                     </h2>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-[var(--ink-soft)] leading-relaxed">
                         We provide end-to-end accounting, taxation, and compliance solutions
                         tailored for businesses, professionals, and startups. Our goal is to
                         simplify financial management, ensure statutory compliance, and help
@@ -28,8 +29,7 @@ export default function AccountsSolutions() {
                     </p>
                 </div>
 
-                {/* Services */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     {[
                         {
@@ -55,12 +55,12 @@ export default function AccountsSolutions() {
                     ].map((service, i) => (
                         <div
                             key={i}
-                            className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition"
+                            className={`feature-tile glass-panel p-8 rounded-3xl ${i === 4 ? "md:col-span-2 md:max-w-xl md:mx-auto" : ""}`}
                         >
-                            <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                            <h3 className="font-display text-xl font-semibold text-[var(--ink)] mb-3">
                                 {service.title}
                             </h3>
-                            <p className="text-slate-600 leading-relaxed">
+                            <p className="text-[var(--ink-soft)] leading-relaxed">
                                 {service.desc}
                             </p>
                         </div>
@@ -68,9 +68,8 @@ export default function AccountsSolutions() {
 
                 </div>
 
-                {/* Closing */}
                 <div className="max-w-3xl mx-auto text-center mt-24">
-                    <p className="text-slate-700 font-medium">
+                    <p className="text-[var(--ink-soft)] font-medium">
                         We ensure accuracy, confidentiality, and timely delivery —
                         backed by professional expertise and personalized service.
                     </p>
