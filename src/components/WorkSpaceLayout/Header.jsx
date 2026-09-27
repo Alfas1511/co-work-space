@@ -23,7 +23,7 @@ const Header = () => {
                                 Workspace
                             </span>
                             <span className="text-xs md:text-sm font-medium text-slate-500">
-                                The Complete Working Hub
+                                The Co-Working Hub
                             </span>
                         </div>
                     </div>

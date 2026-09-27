@@ -7,7 +7,7 @@ export default function WorkspaceLayout() {
         <div className="flex flex-col min-h-screen">
             <Header
                 title="Workspace"
-                subtitle="The Complete Working Hub"
+                subtitle="The Co-Working Hub"
                 logo="/images/workspace_logo.jpg"
                 showAccountsLink={true}
                 showWorkspaceLink={false}

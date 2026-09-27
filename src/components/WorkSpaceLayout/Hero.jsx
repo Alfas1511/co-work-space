@@ -25,7 +25,7 @@ export default function Hero() {
         {
             img: "/images/hero-focus.jpg",
             title: "Flexible Plans",
-            desc: "Choose from daily, weekly, or monthly rentals that fit your needs."
+            desc: "Choose from daily or monthly rentals that fit your needs."
         },
         {
             img: "/images/hero-corridor.jpg",
@@ -50,7 +50,7 @@ export default function Hero() {
 
                             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
                                 <p className="mb-4 text-xs md:text-sm tracking-[0.35em] uppercase text-white/70 animate-fadeIn font-medium">
-                                    Workspace · The Complete Working Hub
+                                    Workspace · The Co-Working Hub
                                 </p>
                                 <h1 className="font-display text-5xl md:text-7xl font-semibold mb-5 max-w-4xl leading-[1.05] animate-fadeIn">
                                     {slide.title}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = ({
     title = "Workspace",
-    subtitle = "The Complete Working Hub",
+    subtitle = "The Co-Working Hub",
     logo = "/images/workspace_logo.jpg",
     showAccountsLink = true,
     showWorkspaceLink = false

@@ -14,9 +14,9 @@ const features = [
 
 const plans = [
     { title: "Daily Pass", desc: "Perfect for freelancers & travelers", price: "₹100", unit: "/ Day" },
-    { title: "Daily Pass (2 People)", desc: "Shared seating for two", price: "₹200", unit: "/ Day" },
+    { title: "Daily Pass (2 Sitting)", desc: "Shared seating for two members", price: "₹200", unit: "/ Day" },
     { title: "Monthly Membership", desc: "Ideal for startups & teams", price: "₹2500", unit: "/ Month", popular: true },
-    { title: "Monthly Membership (2 People)", desc: "Shared seating for two, full month", price: "₹4500", unit: "/ Month" },
+    { title: "Monthly Membership (2 Sitting)", desc: "Shared seating for two members, full month", price: "₹5000", unit: "/ Month" },
 ];
 
 export default function FeaturesAndPlans() {
