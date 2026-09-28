@@ -2,7 +2,7 @@ import React from 'react'
 
 const spaces = [
     {
-        img: "/images/space-brand.jpg",
+        img: "/images/space-reception.jpg",
         label: "Reception",
         span: "md:col-span-2 md:row-span-2"
     },

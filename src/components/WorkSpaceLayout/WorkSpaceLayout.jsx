@@ -8,7 +8,7 @@ export default function WorkspaceLayout() {
             <Header
                 title="Workspace"
                 subtitle="The Co-Working Hub"
-                logo="/images/workspace_logo.jpg"
+                logo="/images/logo-1024.png"
                 showAccountsLink={true}
                 showWorkspaceLink={false}
             />
