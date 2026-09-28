@@ -47,14 +47,14 @@ const Footer = () => {
                             <FaInstagram />
                         </a>
 
-                        <a
+                        {/* <a
                             href="#"
                             className="w-10 h-10 flex items-center justify-center
                             rounded-xl bg-white/10 hover:bg-blue-500
                             transition-all duration-300 hover:scale-105"
                         >
                             <FaLinkedin />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
 
